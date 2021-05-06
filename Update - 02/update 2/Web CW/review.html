@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>WEBSITE REVIEW</title>
+			<link href="external_css.css" type = "text/css" rel="stylesheet">
+		</head>
+			<body class="bodyreview">
+				<fieldset>
+					<legend align="center"><h1 class="style"><b>REVIEW</b></h1></legend>
+					<form name="myForm1" action="/action_page.php" method="post" id="information" onsubmit="check()">
+						<table cellspacing="10" class="table">
+							<tr>
+								<td ><b>First Name:</b></td> 
+									<td><input type="text" name="Firstname" placeholder="First Name" id="Firstname"></td> 
+							</tr>
+							<tr>
+								<td><b>Last Name :</b></td>
+									<td><input type="text" name="Lastname" Placeholder="Last Name" id="Lastname"></td>
+							</tr>
+							<tr>
+								<td><b>Age       :</b></td>
+									<td><input type="text" name="Age" Placeholder="Age"></td>
+							</tr>
+							<tr>
+								<td><b>Gender    :</b></td>
+									<td><input type="radio" name="Gender" value="Male"><b>Male</b> <input type="radio" name="Gender" value="Female">
+									<b>Female</b></td>
+							</tr>
+							<tr>
+								<td><b>Email Address :</b></td>
+									<td><input type="text" name="EmailAddress" Placeholder="Email Address"></td>
+							</tr>
+							<tr>
+								<td><b>Comments:</b></td>
+									<td><textarea name="textarea" cols="30" rows="10" id="comments"></textarea></td>							
+						    </tr>
+							<tr>
+								<td><b>Rating: </b></td>
+									<td>
+										<select id="rate">
+											<option value="Please Select">- -</option>
+											<option value="Excellent">Excellent</option>
+											<option value="Above Average">Above average</option>
+											<option value="Average">Average</option>
+											<option value="Below Average">Below Average</option>
+											<option value="Poor">Poor</option>
+										</select>										
+									</td>
+									<tr>
+									<td></td>
+										<td></td>
+										<td><button type="submit" value="Submit" onclick="return validateForm()" >Submit</button></td>
+									</tr>
+									
+						</table>				
+					</form>
+			</fieldset>
+									<script>
+											function validateForm() {
+											var f = document.forms["myForm1"]["Firstname"].value;
+											var l = document.forms["myForm1"]["Lastname"].value;
+											var c = document.forms["myForm1"]["textarea"].value;
+											if (f == "") {
+											alert("First name must be filled out");
+											if (l == "") {
+											alert("Last name must be filled out");
+											if (c == "") {
+											alert("Write a comment about our website");
+											return false;
+											}
+											}
+											}
+											}
+										function check() {
+											var Firstname =document.getElementById("Firstname").value;
+											var Lastname =document.getElementById("Lastname").value;
+											var rate =document.getElementById("rate").value;
+											var comments =document.getElementById("comments").value;
+											var details=confirm("Dear "+Firstname+" "+Lastname+","+"Thank you very much for your feedback.You have rated our site as "+rate+" "+"and your comment was "+comments);
+											if (details==true) {
+												document.getElementById("information").reset();;
+											}
+											else {
+												none;
+											}
+											
+										}
+										
+									
+									</script>
+											
+									
+									
+
+									
+												
+						
+					
+					
+			</body>
+	</html>

@@ -1,0 +1,64 @@
+<!Doctype html>
+	<html>
+		<head>
+			<title>Log in</title>
+			<link href="external_css.css" type = "text/css" rel="stylesheet">
+		</head>
+		<body class="loginbody">
+		<fieldset class="legend">
+				<legend align="center"><img  src="avartar_login.jpg" width="20%" height="20%" class="loginimg" /></legend>
+					<br>
+					<br>
+					<br>
+					<form name="myForm3" action="/action_page.php" method="post" id="login" onsubmit="loginsubmit()">
+					<table class="table2" align="center" cellspacing="20">
+						<tr>
+							<td><b>Email Address:</b></font></td> 
+									<td><input type="email" name="Emailaddress" placeholder="Email Address" id="Emailaddress" align="center"></td>
+						</tr>
+						<tr>
+							<td><b>Password:</b></font></td> 
+									<td><input type="Password" name="Password" placeholder="Password" id="Password"> </td>
+						</tr>
+						<tr>
+						<td><button type="submit" value="Submit" class="loginbutton" onclick="return login()" ><b>Login</b></button></td>
+						</tr>
+						<tr>
+						
+						<td><a href="file:///G:/lap%20backup/web%20coursework/Web%20CW/create%20an%20account">+Create an account</a><//td>
+						<td><a href="https://www.evernote.com/ForgotPassword.action">Forgot Password</a></td>
+						</tr>
+					</table>
+					</form>
+			</fieldset>
+							<script>
+								function login(){
+									var email=document.forms["myForm3"]["Emailaddress"].value;
+									var password=document.forms["myForm3"]["Password"].value;
+									if (email==""){
+									alert("Fill your email address");
+									return false;
+									}
+									if (password==""){
+									alert("Your password please..");
+									return false;
+									}
+								}
+								
+								function loginsubmit(){
+											var details=confirm("You have successfully logged into your account in beatbox.lk ");
+											if (details==true) {
+												document.getElementById("login").reset();
+												window.open("file:///C:/Users/PCM/Desktop/web%20coursework/Web%20CW/student%202");
+											}
+											
+											
+										}
+						</script>
+								
+
+						
+		
+		</body>
+	</html>
+	

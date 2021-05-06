@@ -1,0 +1,192 @@
+ul {
+  list-style-type: none;
+  margin-right: 20%;
+  padding-right: 10%;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a,
+.dropbtn {
+  display: inline-block;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(31, 49, 131);
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.logo{
+	float:right;
+	top:0%;
+	right:0%;
+	margin:auto;
+	position:absolute;
+	width:20%;
+	height:20%;
+	
+}
+
+.student2_img{
+	background-image:url('student2_img.jpg');
+}
+.watermark1{
+	position: absolute;
+	width: 99%;
+	height: 88%;
+	opacity: 100%;
+	padding-top:3%;
+	filter: alpha(opacity=10);
+}
+
+.watermark2{
+	position: absolute;
+	width:30%;
+	height: 30%;
+	padding-right:20%;
+	padding-left:0%;
+	padding-top:63%;
+	padding-bottom:10%;
+}
+
+.watermark3{
+	position: absolute;
+	width:30%;
+	height: 30%;
+	float:right;
+	padding-left:0%;
+	padding-top:48%;
+	padding-bottom:30%;
+
+}
+
+.watermark4{
+	position: absolute;
+	width: 7%;
+	height: 10%;
+	padding-left:80%;
+	padding-top:1%;
+}
+
+.watermark5{
+	position: absolute;
+	width: 13%;
+	height: 13%;
+	padding-left:85%;
+	padding-top:0%;
+}
+
+.watermark6{
+	position: absolute;
+	width: 6%;
+	height: 6%;
+	padding-left:81%;
+	padding-top:7%;
+}
+
+.watermark12{
+	position: absolute;
+	width: 99%;
+	height: 89%;
+	opacity: 100%;
+	filter: alpha(opacity=20);
+}
+
+
+.IIT{
+	width:25%;
+	height:25%;
+	padding-left:10%;
+}
+
+.westminster{
+	width:25%;
+	height:25%;
+
+	
+
+}
+
+div.center {
+  margin: auto;
+  padding-top:47%;
+  padding-right:10%;
+  padding-left:36%;
+
+}
+
+.footer{
+	background-color:#D3D3D3;
+}
+
+.malithprofile{
+	font-family:Garamond;
+	font-weight:bold;
+	font-size:140%;
+	border-style:double;
+	border-width:7px;
+	border-color: #000080;
+	padding:10px 85px;
+}
+
+
+.registerbutton{
+	background-color:#bd151f;
+	border-radius:5px;
+	padding:10px 15px;
+}
+
+.style{
+	font-family:Comic Sans MS;
+	color:#000000;
+}
+
+.bodyreview{
+	background-color:#e6e6fa;
+}
+	
+.table1{
+	color:#000000;
+	font-size:140%;
+}
+
+.table2{
+	color:#000000;
+	font-size:140%;
+	padding-top:1%;
+}
+
+.loginimg{
+	padding-left:43%;
+	padding-top:5%;
+	
+}
+
+.legend{
+	background-image:url('blue_login.jpg');
+}
+
+.loginbody{
+	background-image:url('gray_login.jpg');
+}
+.loginbutton{
+	color:#4e5fcd;
+	width:20p%;
+	height:10%;
+	padding-left:43%;
+	padding-right:43%;
+}
+

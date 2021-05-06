@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Create an account</title>
+			<link href="external_css.css" type = "text/css" rel="stylesheet">
+		</head>
+			<body style="background-image:url('Register.jpg')">
+			  <fieldset>
+				<legend align="center"><h1 class="style" >Register</h1></legend>
+				<form name="myForm2" action="/action_page.php" method="post" id="account" >
+
+					<table cellspacing="20" class="table1">
+					
+						<tr>
+							<td ><b>First Name :</b></font></td> 
+									<td><input type="text" name="Firstname" placeholder="First Name" id="Firstname"></td>
+						</tr>
+						<tr>
+							<td><b>Last Name :</b></font></td> 
+									<td><input type="text" name="Lastname" placeholder="Last Name" id="Lastname"></td>
+						</tr>
+						<tr>
+							<td><b>Street Address :</b></font></td> 
+									<td><input type="textarea" name="Streetaddress" placeholder="Street Address" id="Steetaddress"></td>
+						</tr>
+						<tr>
+							<td><b>Optional(Apartment Number, Floor,etc.):</b></font></td> 
+									<td><input type="text" name="Optional" placeholder="" id="Optional"></td>
+						</tr>
+						<tr>
+							<td><b>City :</b></font></td> 
+									<td><input type="text" name="City" placeholder="City" id="City"></td>
+						</tr>
+		
+						<tr>
+							<td><b>State/Province :</b></font></td> 
+									<td><input type="text" name="State" placeholder="State/Province" id="Province"></td>
+						</tr>
+						<tr>
+							<td><b>Zip/Postal Code :</b></font></td> 
+									<td><input type="text" name="Zip" placeholder="Zip/Postal Code" id="Zip"></td>
+						</tr>
+						<tr>
+							<td><b>Email Address:</b></font></td> 
+									<td><input type="text" name="Emailaddress" placeholder="Email Address" id="Emailaddress"></td>
+						</tr>
+						<tr>
+							<td><b>Password:</b></font></td> 
+									<td><input type="Password" name="Password" placeholder="Password" id="Password"></td>
+						</tr>
+						<tr>
+							<td><b>Contact No:</b></font></td> 
+									<td><input type="text" name="Contactno" placeholder="Contact Number" id="Contactno"></td>
+						</tr>
+						<td><b>Region: </b></font></td>
+									<td>
+										<select id="Region">
+											<option value="Please Select">- -</option>
+											<option value="Africa">Africa</option>
+											<option value="Asia">Asia</option>
+											<option value="Central America">Central America</option>
+											<option value="Eastern Europe">Eastern Europe</option>
+											<option value="Middle East">Middle East</option>
+											<option value="North America">North America</option>
+											<option value="Oceania">Oceania</option>
+											<option value="Middle East">Middle East</option>
+											<option value="South America">South America</option>
+
+										</select>										
+									</td>
+									<tr>
+										<td></td>
+										<td><button type="submit" value="Submit" onclick="validation()" class="registerbutton"><b>Create an account</b></button></td>
+									</tr>
+						</table>
+				</form>
+			</fieldset>
+					
+										<script>
+											function validation() {
+											var a = document.forms["myForm2"]["Firstname"].value;
+											var b = document.forms["myForm2"]["Lastname"].value;
+											var c = document.forms["myForm2"]["Steetaddress"].value;
+											var d = document.forms["myForm2"]["City"].value;
+											var e = document.forms["myForm2"]["Province"].value;
+											var f = document.forms["myForm2"]["Zip"].value;
+											var g = document.forms["myForm2"]["Emailaddress"].value;
+											var h = document.forms["myForm2"]["Password"].value;
+											var i = document.forms["myForm2"]["Contactno"].value;
+											var j = document.forms["myForm2"]["Region"].value;
+											if (a == "") {
+											alert("First Name must be filled out");
+											if (b == "") {
+											alert("Last name must be filled out");
+											if (c == "") {
+											alert("Street Address must be filled out");
+											if (d == "") {
+											alert("Which City are you from ?");
+											if (e == "") {
+											alert("Which Province are you from ?");
+											if (f == "") {
+											alert("Fill the zip code of your area");
+											if (g == "") {
+											alert("Email address must be filled out");			
+											if (h == "") {
+											alert("Create a strong password");		
+											if (i == "") {
+											alert("Fill your Contact Number");		
+											if (j == "") {
+											alert("Select the region you are in");					 						
+											return true;
+											}
+											}
+											}
+											}
+											}
+											}
+											}
+											}
+											}
+											}
+											}
+										</script>
+							
+			</body>
+	</html>
