@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Register</title>
+			<link href="register.css" type = "text/css" rel="stylesheet">
+		</head>
+			<body>
+			<div class="scroller">
+				<header>
+					<div class="main">
+						<img src="logo.jpg" class="logo">
+						<ul>
+							<li ><a href="#">Home</a></li>
+							<li><a href="index.html">Quiz</a></li>
+							<li><a href="#">Store</a></li>
+							<li><a href="AboutUs.html">About Us</a></li>
+							<li><a href="review.html">Review</a></li>
+							<div class="dropdown">
+							<li  class="dropbtn"><a href="#">Content</a></li>
+							 <div class="dropdown-content">
+							  <a href="#">Roland</a>
+							  <a href="#">Yamaha</a>
+							  <a href="#">Casio</a>
+							  </div>
+							</div>
+						</ul>
+					</div>
+
+					
+				<div class="scroller_review">
+				<div class="wrap">
+					<h2 class="review_h2">REGISTER</h2>
+					<form name="myForm2" method="post" id="account" onsubmit="account()">
+						
+						<input class="input_review" type="text" name="Firstname" placeholder="First Name" id="Firstname">						
+						<input  class="input_review" type="text" name="Lastname" placeholder="Last Name" id="Lastname">						
+						<textarea  class="input_review" name="textarea" placeholder="Street Address" cols="17" rows="1" id="Steetaddress"></textarea>						
+						<input  class="input_review" type="text" name="Optional" placeholder="Optional" id="Optional">
+						<input  class="input_review" type="text" name="City" placeholder="City" id="City">
+						<td><input  class="input_review" type="text" name="State" placeholder="State/Province" id="Province">
+						<input  class="input_review" type="text" name="Zip" placeholder="Zip/Postal Code" id="Zip">
+						<input  class="input_review" type="text" name="Emailaddress" placeholder="Email Address" id="Emailaddress">
+						<input  class="input_review" type="Password" name="Password" placeholder="Password" id="Password">
+						<input  class="input_review" type="text" name="Contactno" placeholder="Contact Number" id="Contactno">						
+								<select id="Region"  class="input_review">
+											<option value="">- -</option>
+											<option value="Africa">Africa</option>
+											<option value="Asia">Asia</option>
+											<option value="Central America">Central America</option>
+											<option value="Eastern Europe">Eastern Europe</option>
+											<option value="Middle East">Middle East</option>
+											<option value="North America">North America</option>
+											<option value="Oceania">Oceania</option>
+											<option value="Middle East">Middle East</option>
+											<option value="South America">South America</option>
+									</select>		
+						<button type="submit" value="Submit" onclick="return validation()" class="submit_review" >Submit</button>
+				</form>							
+				
+
+									</div>									
+												<div class="footer">
+													<div class="inner-footer">
+														<div class="footer-items">
+															<h1>BeatBox.LK</h1>
+															<p>
+															BeatBox.Lk is the pioneer in introducing proffesional music items around the world.	We've got some biggest brands in stock,
+															including Yamaha, Roland, Casio, Fender, Ibanez, Alesis, Gibson & Begiringer,as well as our own great value BeatBox.LK music
+															product range.
+															</p>																	
+															<br></br>
+															<br></br>
+															<p>Edited By :</p> <a href="Malith's Profile.html">Oshadha Goonathilake</a>
+													</div>
+													<div class="footer-items">
+															<h2>Quick links</h2>
+															<div class="border"></div>
+															<ul class="ul">
+																<a href=""><li class="li_2">AboutUs</li></a>
+																<a href=""><li class="li_2">SiteMap</li></a>
+																<a href=""><li class="li_2">Quiz</li></a>
+																<a href=""><li class="li_2">Review</li></a>
+
+															</ul>
+													</div>
+													<div class="footer-items">
+															<h2>Other</h2>
+															<div class="border"></div>
+															<ul class="ul">
+																<a href=""><li class="li" >Purchase</li></a>
+																<a href="gallery.html"><li class="li" >Gallery</li></a>
+														</ul>
+													</div>
+													<div class="footer-items">
+															<h2>Contact Us</h2>
+															<div class="border"></div>
+															<ul class="ul">
+																<li ><img src="location.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;28, Ward Place,Srilanka</li>
+																<br></br>
+																<li ><img src="phone.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;+94 567 889 345</li>
+																<br></br>										
+																<li ><img src="email.jpg" width="7%" height="7%"></img>&nbsp;&nbsp;support@BeatBox.lk</li>
+																<br></br>
+
+															</ul>		
+																
+															<div class="social-media">
+																<a href="https://www.facebook.com/"><img src="facebook.jpg" width="12%" height="12%"></img></i></a>
+																<a href="https://www.instagram.com/?hl=en"><img src="instagram.jpg" width="8%" height="8%" class="instagram"></img></i></a>	
+																<a href="https://lk.linkedin.com/"><img src="Linkedin.jpg" width="8%" height="8%" class="linkedin"></img></i></a>
+																<a href="https://twitter.com/login"><img src="twitter.jpg" width="8%" height="8%" class="twitter"></img></i></a>
+															</div>									
+													</div>
+												</div>	
+												<div class="footer-bottom">
+													Copyright &copy; 2020 All Right Reserved
+													</div>
+											</div>
+					
+					<script>
+											function validation() {
+											var a = document.forms["myForm2"]["Firstname"].value;
+											var b = document.forms["myForm2"]["Lastname"].value;
+											var c = document.forms["myForm2"]["Steetaddress"].value;
+											var d = document.forms["myForm2"]["City"].value;
+											var e = document.forms["myForm2"]["Province"].value;
+											var f = document.forms["myForm2"]["Zip"].value;
+											var g = document.forms["myForm2"]["Emailaddress"].value;
+											var h = document.forms["myForm2"]["Password"].value;
+											var i = document.forms["myForm2"]["Contactno"].value;
+											var j = document.forms["myForm2"]["Region"].value;
+											if (a == "") {
+											alert("First Name must be filled out");
+											return false;
+											}
+											if (b == "") {
+											alert("Last name must be filled out");
+											return false;
+											}
+											if (c == "") {
+											alert("Street Address must be filled out");
+											return false;
+											}
+											if (d == "") {
+											alert("Which City are you from ?");
+											return false;
+											}
+											if (e == "") {
+											alert("Which Province are you from ?");
+											return false;
+											}
+											if (f == "") {
+											alert("Fill the zip code of your area");
+											return false;
+											}
+											if (g == "") {
+											alert("Email address must be filled out");		
+											return false;
+											}
+											if (h == "") {
+											alert("Create a strong password");		
+											return false;
+											}
+											if (i == "") {
+											alert("Fill your Contact Number");	
+											return false;
+											}
+											if (j == "") {
+											alert("Select the region you are in");					 						
+											return false;
+											}
+											}
+										
+											function account() {
+											var Firstname =document.getElementById("Firstname").value;
+											var Lastname =document.getElementById("Lastname").value;
+											var details=confirm("Dear "+Firstname+" "+Lastname+","+"You have successfully created an account on beatbox.lk ");
+											if (details==true) {
+												document.getElementById("account").reset();
+												window.open("Student 2.html");
+											}
+											else {
+												none;
+											}
+											
+										}
+										</script>
+							
+			</body>
+	</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>WEBSITE REVIEW</title>
+			<link href="review.css" type = "text/css" rel="stylesheet">
+		</head>
+			<body>
+			<div class="scroller">
+				<header>
+					<div class="main">
+						<img src="logo.jpg" class="logo">
+						<ul>
+							<li ><a href="#">Home</a></li>
+							<li><a href="index.html">Quiz</a></li>
+							<li><a href="#">Store</a></li>
+							<li><a href="#">About Us</a></li>
+							<li class="active"><a href="review.html">Review</a></li>
+							<div class="dropdown">
+							<li  class="dropbtn"><a href="#">Content</a></li>
+							 <div class="dropdown-content">
+							  <a href="#">Roland</a>
+							  <a href="#">Yamaha</a>
+							  <a href="#">Casio</a>
+							  </div>
+							</div>
+						</ul>
+					</div>
+
+					
+				<div class="scroller_review">
+				<div class="wrap">
+					<h2 class="review_h2">Review</h2>
+					<form name="myForm1" method="post" id="information" onsubmit="check()">
+						<input class="input_review" type="text" name="Firstname" placeholder="First Name" id="Firstname"> 
+						<input class="input_review" type="text" name="Lastname" Placeholder="Last Name" id="Lastname">
+						<input class="input_review" type="text" name="Age" Placeholder="Age">
+						<input class="input_review" type="email" name="EmailAddress" Placeholder="Email Address">
+						<input class="input_review" name="textarea" name="Comments" id="comments" Placeholder="Comments">		
+						
+						<select class="input_review" id="rate">
+							<option value="">- -</option>
+							<option value="Excellent">Excellent</option>
+							<option value="Above Average">Above average</option>
+							<option value="Average">Average</option>
+							<option value="Below Average">Below Average</option>
+							<option value="Poor">Poor</option>
+						</select>	
+						<button type="submit" value="Submit" onclick="return validateForm()" class="submit_review" >Submit</button>
+
+					</form>
+			</div>
+			
+					
+							<div class="footer">
+							<div class="inner-footer">
+								<div class="footer-items">
+									<h1>BeatBox.LK</h1>
+									<p>
+									BeatBox.Lk is the pioneer in introducing proffesional music items around the world.	We've got some biggest brands in stock,
+									including Yamaha, Roland, Casio, Fender, Ibanez, Alesis, Gibson & Begiringer,as well as our own great value BeatBox.LK music
+									product range.
+									</p>	
+									<br></br>
+									<br></br>
+									<p>Edited By :</p> <a href="Malith's Profile.html">Oshadha Goonathilake</a>
+							</div>
+							<div class="footer-items">
+									<h2>Quick links</h2>
+									<div class="border"></div>
+									<ul class="ul">
+										<a href=""><li class="li_2">AboutUs</li></a>
+										<a href=""><li class="li_2">SiteMap</li></a>
+										<a href=""><li class="li_2">Quiz</li></a>
+										<a href=""><li class="li_2">Review</li></a>
+
+									</ul>
+							</div>
+							<div class="footer-items">
+									<h2>Other</h2>
+									<div class="border"></div>
+									<ul class="ul">
+										<a href=""><li class="li" >Purchase</li></a>
+										<a href="gallery.html"><li class="li" >Gallery</li></a>
+								</ul>
+							</div>
+							<div class="footer-items">
+									<h2>Contact Us</h2>
+									<div class="border"></div>
+									<ul class="ul">
+										<li ><img src="location.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;28, Ward Place,Srilanka</li>
+										<br></br>
+										<li ><img src="phone.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;+94 567 889 345</li>
+										<br></br>										
+  										<li ><img src="email.jpg" width="7%" height="7%"></img>&nbsp;&nbsp;support@BeatBox.lk</li>
+										<br></br>
+
+									</ul>		
+										
+									<div class="social-media">
+										<a href="https://www.facebook.com/"><img src="facebook.jpg" width="12%" height="12%" alt="facebook"></img></i></a>
+										<a href="https://www.instagram.com/?hl=en"><img src="instagram.jpg" width="8%" height="8%" class="instagram" alt="instagram"></img></i></a>	
+										<a href="https://lk.linkedin.com/"><img src="Linkedin.jpg" width="8%" height="8%" class="linkedin" alt="Linkedin"></img></i></a>
+										<a href="https://twitter.com/login"><img src="twitter.jpg" width="8%" height="8%" class="twitter" alt="Twitter"></img></i></a>
+									</div>									
+							</div>
+						</div>	
+						<div class="footer-bottom">
+							Copyright &copy; 2020 All Right Reserved
+							</div>
+					</div>
+					</header>
+						
+									<script>
+											function validateForm() {
+											var f = document.forms["myForm1"]["Firstname"].value;
+											var l = document.forms["myForm1"]["Lastname"].value;
+											var c = document.forms["myForm1"]["textarea"].value;
+											var r = document.forms["myForm1"]["rate"].value;
+											if (f == "") {
+											alert("First name must be filled out");
+											return false;
+											}
+											if (l == "") {
+											alert("Last name must be filled out");
+											return false;
+											}
+											if (c == "") {
+											alert("Write a comment about our website");
+											return false;
+											}
+											if (r == "") {
+											alert("Please Rate Us");
+											return false;
+											}
+											}
+											
+											
+										function check() {
+											var Firstname =document.getElementById("Firstname").value;
+											var Lastname =document.getElementById("Lastname").value;
+											var rate =document.getElementById("rate").value;
+											var comments =document.getElementById("comments").value;
+											var details=confirm("Dear "+Firstname+" "+Lastname+","+"Thank you very much for your feedback.You have rated our site as "+rate+" "+"and your comment was "+comments);
+											if (details==true) {
+												document.getElementById("information").reset();
+												window.open("Main page.html");
+											}
+											else {
+												none;
+											}
+											
+										}
+										
+									
+									</script>
+											
+									
+									
+
+									
+												
+						
+					
+					
+			</body>
+	</html>

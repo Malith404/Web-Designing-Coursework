@@ -1,0 +1,277 @@
+<!DOCKTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CART</title>
+		<link href="cart.css" type = "text/css" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="main">
+						<img src="logo.jpg" class="logo"><!-- logo-->
+						<ul>
+							<li><a href="presentation.html">Home</a></li><!-- presenation page-->
+							<li><a href="index.html">Quiz</a></li><!-- Quiz-->
+							<li class="active"><a href="cart.html">Store</a></li><!--Music store-->
+							<div class="dropdown">
+							<li class="dropbtn">About Us</li>
+							<div class="dropdown-content">
+							  <a href="Amila's Profile.html">Amila</a><!--Amila's profile-->
+							  <a href="Yomal's Profile.html">Yomal</a><!--Yomal's profile-->
+							  <a href="Malith's Profile.html">Malith</a><!--Malith's profile-->
+							 </div>
+							 </div>
+							<li><a href="review.html">Review</a></li><!--Comments form-->
+							<div class="dropdown">
+							<li  class="dropbtn">Content</li><!--Content page where the information of 3 brands contain-->
+							 <div class="dropdown-content">
+							  <a href="Roland.html">Roland</a>
+							  <a href="Yamaha.html">Yamaha</a>
+							  <a href="Casio.html">Casio</a>
+							  </div>
+							</div>
+						</ul>
+					</div>
+					
+		<!-- Cart starting here -->			
+		<br><br><br>
+		<div class="Cmain">
+			<h1 class="h1">Products For Sale</h1>
+			<span><i class="ShopingCart"></i></span>
+			<div class="blank"><!-- Drums row starting here -->
+				<div class="name">Drums</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="drum/gretsch.jpg" alt="">
+					 <br>
+					 <h2>Gretsch Drum Set</h2>
+					 <p>
+						price: rs.55,000
+					 </p>
+					 <button class="add-to-cart" type="button"  onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="drum/ludwig.jpg" alt="">
+					 <br>
+					 <h2>Ludwig Drum Set</h2>
+					 <p>
+						price: rs.77,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="drum/mapex.jpg" alt="">
+					 <br>
+					 <h2>mapex drum set</h2>
+					 <p>
+						price: rs.55,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			<!-- Guitar row starting here -->
+			<div class="blank">
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="name">Guitar</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="guitar/PRS.jpg" alt="">
+					 <br>
+					 <h2>prs</h2>
+					 <p>
+						price: rs.85,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="guitar/ibanez.jpg" alt="">
+					 <br>
+					 <h2>ibanez</h2>
+					 <p>
+						price: rs.150,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="guitar/jackson.jpg" alt="">
+					 <br>
+					 <h2>Jackson</h2>
+					 <p>
+						price: rs.177,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			<!-- piano row starting here -->
+			<div class="blank">
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="name"><br>Piano</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="piano/c_benchstein.jpg" alt="">
+					 <br>
+					 <h2>c_benchstein piano</h2>
+					 <p>
+						price: rs.535,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="piano/fazioli.jpg" alt="">
+					 <br>
+					 <h2>fazioli grand piano</h2>
+					 <p>
+						price: rs.455,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="piano/grotrian.jpg" alt="">
+					 <br>
+					 <h2>grotrian grand piano</h2>
+					 <p>
+						price: rs.365,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			<!-- DJ row starting here -->
+			<div class="blank">
+				<br>
+				<br>
+				<br>
+				<br>
+				<div class="name"><br>DJ Panels</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="DJ/Roland.jpg" alt="">
+					 <br>
+					 <h2>Roland dj panel</h2>
+					 <p>
+						price: rs.77,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="DJ/novation.jpg" alt="">
+					 <br>
+					 <h2>novation pad</h2>
+					 <p>
+						price: rs.48,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+			
+			<div class="Items">
+				<div class="Item">
+					 <img src="DJ/traktor.jpg" alt="">
+					 <br>
+					 <h2>traktor dj panel</h2>
+					 <p>
+						price: rs.188,000
+					 </p>
+					 <button class="add-to-cart" type="button" onclick="addtocart()"> Add to Cart</button>
+				</div>
+			</div>
+		</div>
+		
+				<!--Starting the footer-->
+						<div class="footer">
+							<a href="#top"><img src="up-arrow.png" width="20px" height="20px"></a><!--Can go directly to the top of the page-->
+							<div class="inner-footer">
+								<div class="footer-items">
+									<h1 >BeatBox.LK</h1><!--Name of the Music store-->
+									<p><!--Description about BEATBOX.LK-->
+									BeatBox.Lk is the pioneer in introducing proffesional music items around the world.	We've got some biggest brands in stock,
+									including Yamaha, Roland, Casio, Fender, Ibanez, Alesis, Gibson & Begiringer,as well as our own great value BeatBox.LK music
+									product range.
+									</p>	
+									<br></br>									
+									<p>Edited By :</p> <a href="Yomal's Profile.html">Yomal Smarakoon</a><!--Person who edited the page-->
+							</div>
+							<div class="footer-items">
+									<h2>Quick links</h2><!--Easy links to some pages-->
+									<div class="border"></div>
+									<ul class="ul">
+										<a href="Site Map.html"><li class="li_2">SiteMap</li></a>
+										<a href="index.html"><li class="li_2">Quiz</li></a>
+										<a href="review.html"><li class="li_2">Review</li></a>
+									</ul>
+									
+							</div>
+							<div class="footer-items">
+									<h2>Other</h2><!--Other pages in the webpage-->
+									<div class="border"></div>
+									<ul class="ul">
+										<a href="cart.html"><li class="li" >Purchase</li></a>
+										<a href="gallery.html"><li class="li" >Gallery</li></a>
+								</ul>
+							</div>
+							<div class="footer-items">
+									<h2>Contact Us</h2>
+									<div class="border"></div>
+									<ul class="ul">
+										<li ><img src="location.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;28, Ward Place,Srilanka</li><!--Location of the music store-->
+										<br></br>
+										<li ><img src="phone.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;+94 567 889 345</li><!--Telephone number of the website-->
+										<br></br>										
+  										<li ><img src="email.jpg" width="7%" height="7%"></img>&nbsp;&nbsp;support@BeatBox.lk</li><!--Email address of the webpage-->
+										<br></br>
+
+									</ul>		
+										<!--Social medias where the music store is registered-->
+									<div class="social-media">
+										<a href="https://www.facebook.com/"><img src="facebook.jpg" width="12%" height="12%" alt="facebook"></img></i></a>
+										<a href="https://www.instagram.com/?hl=en"><img src="instagram.jpg" width="8%" height="8%" class="instagram" alt="instagram"></img></i></a>	
+										<a href="https://lk.linkedin.com/"><img src="Linkedin.jpg" width="8%" height="8%" class="linkedin" alt="Linkedin"></img></i></a>
+										<a href="https://twitter.com/login"><img src="twitter.jpg" width="8%" height="8%" class="twitter" alt="Twitter"></img></i></a>
+									</div>									
+							</div>
+						</div>	
+						<div class="footer-bottom">
+							Copyright &copy; 2020 All Right Reserved
+							</div>
+					<script>
+									function addtocart() {
+											confirm("Dear Customer"+","+"Thank you very much.You have successfully added the item to the cart");
+											
+										}
+					</script>
+	</body>
+</html>

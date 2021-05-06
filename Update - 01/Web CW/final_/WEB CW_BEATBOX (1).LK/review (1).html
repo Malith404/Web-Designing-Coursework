@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>WEBSITE REVIEW</title><!--Title of the webpage-->
+			<link href="review.css" type = "text/css" rel="stylesheet">
+		</head>
+			<body>
+			<div class="scroller"><!--Custom scroller-->
+					<div class="main">
+						<img src="logo.jpg" class="logo"><!--Logo of the website-->
+						<ul>
+							<li><a href="presentation.html">Home</a></li><!--Presentation page of the website-->
+							<li><a href="index.html">Quiz</a></li><!--Quiz of the website-->
+							<li><a href="cart.html">Store</a></li><!--Music store-->
+							<div class="dropdown">
+							<li class="dropbtn">About Us</li><!--Cvs to the editors of the webpage-->
+							<div class="dropdown-content">
+							  <a href="Amila's Profile.html">Amila</a>
+							  <a href="Yomal's Profile.html">Yomal</a>
+							  <a href="Malith's Profile.html">Malith</a>
+							 </div>
+							 </div>
+							<li  class="active"><a href="review.html">Review</a></li><!--Review page of the website-->
+							<div class="dropdown">
+							<li  class="dropbtn">Content</li>
+							 <div class="dropdown-content">
+							  <a href="Roland.html">Roland</a>
+							  <a href="Yamaha.html">Yamaha</a>
+							  <a href="Casio.html">Casio</a>
+							  </div>
+							</div>
+						</ul>
+					</div>
+					<!--Starting of the review form-->
+				<div class="wrap">
+					<h2 class="review_h2">Review</h2><!--Title of the webpage-->
+					<form name="myForm1" method="post" id="information" onsubmit="check()"><!--Starting of the form of the review section-->
+						<input class="input_review" type="text" name="Firstname" placeholder="First Name" id="Firstname"> 
+						<input class="input_review" type="text" name="Lastname" Placeholder="Last Name" id="Lastname">
+						<input class="input_review" type="text" name="Age" Placeholder="Age">
+						<input class="input_review" type="email" name="EmailAddress" Placeholder="Email Address">
+						<input class="input_review" name="textarea" name="Comments" id="comments" Placeholder="Comments">		
+						
+						<select class="input_review" id="rate">
+							<option value="">- -</option>
+							<option value="Excellent">Excellent</option>
+							<option value="Above Average">Above average</option>
+							<option value="Average">Average</option>
+							<option value="Below Average">Below Average</option>
+							<option value="Poor">Poor</option>
+						</select>	
+						<!--Cannot submit the form until each section is filled-->
+						<button type="submit" value="Submit" onclick="return validateForm()" class="submit_review" >Submit</button>
+
+					</form>
+			</div>
+			
+				<!--Starting the footer-->
+						<div class="footer">
+							<a href="#top"><img src="up-arrow.png" width="20px" height="20px"></a><!--Can go directly to the top of the page-->
+							<div class="inner-footer">
+								<div class="footer-items">
+									<h1 >BeatBox.LK</h1><!--Name of the Music store-->
+									<p><!--Description about BEATBOX.LK-->
+									BeatBox.Lk is the pioneer in introducing proffesional music items around the world.	We've got some biggest brands in stock,
+									including Yamaha, Roland, Casio, Fender, Ibanez, Alesis, Gibson & Begiringer,as well as our own great value BeatBox.LK music
+									product range.
+									</p>	
+									<br></br>									
+									<p>Edited By :</p> <a href="Malith's Profile.html">Oshadha Goonathilake</a><!--Person who edited the page-->
+							</div>
+							<div class="footer-items">
+									<h2>Quick links</h2><!--Easy links to some pages-->
+									<div class="border"></div>
+									<ul class="ul">
+										<a href="Site Map.html"><li class="li_2">SiteMap</li></a>
+										<a href="index.html"><li class="li_2">Quiz</li></a>
+										<a href="review.html"><li class="li_2">Review</li></a>
+									</ul>
+									
+							</div>
+							<div class="footer-items">
+									<h2>Other</h2><!--Other pages in the webpage-->
+									<div class="border"></div>
+									<ul class="ul">
+										<a href="cart.html"><li class="li" >Purchase</li></a>
+										<a href="gallery.html"><li class="li" >Gallery</li></a>
+								</ul>
+							</div>
+							<div class="footer-items">
+									<h2>Contact Us</h2>
+									<div class="border"></div>
+									<ul class="ul">
+										<li ><img src="location.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;28, Ward Place,Srilanka</li><!--Location of the music store-->
+										<br></br>
+										<li ><img src="phone.jpg" width="5%" height="5%"></img>&nbsp;&nbsp;+94 567 889 345</li><!--Telephone number of the website-->
+										<br></br>										
+  										<li ><img src="email.jpg" width="7%" height="7%"></img>&nbsp;&nbsp;support@BeatBox.lk</li><!--Email address of the webpage-->
+										<br></br>
+
+									</ul>		
+										<!--Social medias where the music store is registered-->
+									<div class="social-media">
+										<a href="https://www.facebook.com/"><img src="facebook.jpg" width="12%" height="12%" alt="facebook"></img></i></a>
+										<a href="https://www.instagram.com/?hl=en"><img src="instagram.jpg" width="8%" height="8%" class="instagram" alt="instagram"></img></i></a>	
+										<a href="https://lk.linkedin.com/"><img src="Linkedin.jpg" width="8%" height="8%" class="linkedin" alt="Linkedin"></img></i></a>
+										<a href="https://twitter.com/login"><img src="twitter.jpg" width="8%" height="8%" class="twitter" alt="Twitter"></img></i></a>
+									</div>									
+							</div>
+						</div>	
+						<div class="footer-bottom">
+							Copyright &copy; 2020 All Right Reserved
+							</div>
+					</div>
+					</div>
+					
+									<script>
+											<!--Validating each section of the form ine by one-->
+											function validateForm() {
+											var f = document.forms["myForm1"]["Firstname"].value;
+											var l = document.forms["myForm1"]["Lastname"].value;
+											var c = document.forms["myForm1"]["textarea"].value;
+											var r = document.forms["myForm1"]["rate"].value;
+											if (f == "") {
+											alert("First name must be filled out");
+											return false;
+											}
+											if (l == "") {
+											alert("Last name must be filled out");
+											return false;
+											}
+											if (c == "") {
+											alert("Write a comment about our website");
+											return false;
+											}
+											if (r == "") {
+											alert("Please Rate Us");
+											return false;
+											}
+											}
+											
+										<!--Giving a message to the user that he/she has filled every section of the form-->
+										function check() {
+											var Firstname =document.getElementById("Firstname").value;
+											var Lastname =document.getElementById("Lastname").value;
+											var rate =document.getElementById("rate").value;
+											var comments =document.getElementById("comments").value;
+											var details=confirm("Dear "+Firstname+" "+Lastname+","+"Thank you very much for your feedback.You have rated our site as "+rate+" "+"and your comment was "+comments);
+											if (details==true) {
+												document.getElementById("information").reset();
+												window.open("Main page.html");
+											}
+											else {
+												none;
+											}
+											
+										}
+										
+									
+									</script>
+											
+									
+									
+
+									
+												
+						
+					
+					
+			</body>
+	</html>

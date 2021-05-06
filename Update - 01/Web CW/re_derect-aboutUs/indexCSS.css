@@ -1,0 +1,23 @@
+body{
+    background: url("girl_music.jpg") center no-repeat,linear-gradient(to right, #161933,#161614 , darkgrey);
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: soft-light,normal;
+}
+.vertical-line {
+    border-left: 3px solid white;
+    margin: 100px 0px 100px 10px;
+    display: block;
+    height: 400px;
+    float: left;
+    overflow: auto;
+}
+.member-detail {
+    float: left;
+    overflow: auto;
+    border-radius: 10px;
+    margin: 10% 5% 10%;
+    padding-bottom: 80px;
+    width: 40% ;
+    background: rgba(192,192,192,0.3);
+}
